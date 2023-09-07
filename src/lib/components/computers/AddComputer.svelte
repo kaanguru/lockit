@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { db } from '$lib/db';
-	import type { Employee, Computer, Printer, OfficeArea, Software } from '$lib/db';
+	import type { Employee, Computer, Printer, OfficeLocation, Software } from '$lib/db';
 	import { onMount } from 'svelte';
 	let computer: Computer = {
 		name: '',
@@ -17,12 +17,12 @@
 		disk2: '',
 		remoteConnectionId: '',
 		remoteConnectionPass: '',
-		OfficeAreaId: null,
+		OfficeLocationId: null,
 		notes: '',
 		softwareIDs: null,
 		printerIDs: null
 	};
-	let locationsList: OfficeArea[] = [];
+	let locationsList: OfficeLocation[] = [];
 	let printersList: Printer[] = [];
 	let softwaresList: Software[] = [];
 	let show = false;
@@ -135,7 +135,7 @@
 			{#if locationsList.length > 0}
 				<label class="label">
 					<span>Location in Office Area</span>
-					<select id="locationId" bind:value={computer.OfficeAreaId}>
+					<select id="locationId" bind:value={computer.OfficeLocationId}>
 						{#each locationsList as location (location.id)}
 							<option value={location.id}>{location.name}</option>
 						{/each}

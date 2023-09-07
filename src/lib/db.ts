@@ -32,13 +32,13 @@ export interface Computer {
 	disk2?: string | null;
 	remoteConnectionId?: string | null;
 	remoteConnectionPass?: string | null;
-	OfficeAreaId?: number | null;
+	OfficeLocationId?: number | null;
 	notes?: string | null;
 	softwareIDs?: number[] | null;
 	printerIDs?: number[] | null;
 }
 
-export interface OfficeArea {
+export interface OfficeLocation {
 	id?: number;
 	name: string;
 }
@@ -55,7 +55,7 @@ export class LockITDatabase extends Dexie {
 	employees!: Dexie.Table<Employee, number>;
 	softwares!: Dexie.Table<Software, number>;
 	computers!: Dexie.Table<Computer, number>;
-	officeLocations!: Dexie.Table<OfficeArea, number>;
+	officeLocations!: Dexie.Table<OfficeLocation, number>;
 	printers!: Dexie.Table<Printer, number>;
 
 	constructor() {
