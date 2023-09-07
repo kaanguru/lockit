@@ -1,27 +1,24 @@
 
 # LockIT
+
 ## Protected IT Inventory
 
 Offline hardware and software asset management tool for IT professionals.
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
+![Logo](/static/img/lockit-logo.png)
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-
 
 ## Demo
 
 Insert gif or link to demo
 
-
 ## Features
 
 - Multi-Lang
 - Your data is always stored offline
-- Export and back-up encrypted data 
+- Export and back-up encrypted data
 - Master Password
-
 
 ## Run Locally
 
@@ -49,7 +46,6 @@ Start the server
   npm run start
 ```
 
-
 ## Usage/Examples
 
 ```javascript
@@ -60,7 +56,6 @@ function App() {
 }
 ```
 
-
 ## Deployment
 
 To deploy this project run
@@ -69,11 +64,9 @@ To deploy this project run
   npm run deploy
 ```
 
-
 ## Documentation
 
 [Documentation](https://linktodocumentation)
-
 
 ## Roadmap
 
@@ -82,6 +75,7 @@ To deploy this project run
 - Add more integrations
 
 - Desktop
+
 ## Contributing
 
 Contributions are always welcome!
@@ -90,13 +84,10 @@ See `contributing.md` for ways to get started.
 
 Please adhere to this project's `code of conduct`.
 
-
 ## Authors
 
 - [@kaanguru](https://github.com/kaanguru/)
 
-
 ## Screenshots
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
