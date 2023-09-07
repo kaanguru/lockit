@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+	/* Reference name */
+	font-family: 'Source Sans 3';
+	/* For multiple files use commas, ex: url(), url(), ... */
+	src: url('/fonts/SourceSans3-VariableFont_wght.ttf');
+}
+@font-face {
+	/* Reference name */
+	font-family: 'Iceland';
+	/* For multiple files use commas, ex: url(), url(), ... */
+	src: url('/fonts/Iceland-Regular.ttf');
+}
+:root {
+	--theme-font-family-base: 'Source Sans 3', sans-serif;
+	--theme-font-family-heading: 'Iceland', cursive;
+}
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+h1 {
+	@apply h1;
+}
+h2 {
+	@apply h2;
+}
+h3 {
+	@apply h3;
+}
+h4 {
+	@apply h4;
+}
+
